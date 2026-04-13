@@ -2,6 +2,20 @@ import { useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar';
 import Banner from './components/Banner';
+import Rating from './components/Rating';
+import Header from './components/Header';
+import Cart from './components/Cart';
+import { ToastContainer } from 'react-toastify'
+import Models from './components/Models';
+import Steps from './components/Steps';
+
+
+const getModels = async () => {
+  const res = await fetch("/data.json")
+  return res.json();
+}
+const modelPromise = getModels();
+
 
 function App() {
   const [selectType, setSelectType] = useState("products")
@@ -10,9 +24,24 @@ function App() {
   return (
     <>
 
-    <Navbar carts={carts} setCarts={setCarts} cartCount={carts.length}></Navbar>
+      <Navbar carts={carts} setCarts={setCarts} cartCount={carts.length}></Navbar>
 
-    <Banner></Banner>
+      <Banner></Banner>
+
+      <Rating></Rating>
+
+      <Header selectType={selectType} setSelectType={setSelectType} cartCount={carts.length} />
+
+      {selectType === "products" && (
+        <Models modelPromise={modelPromise} carts={carts} setCarts={setCarts} />
+      )}
+      {selectType === "cart" && (
+        <Cart carts={carts} setCarts={setCarts} />
+      )}
+
+
+
+      <ToastContainer></ToastContainer>
     </>
   )
 }
