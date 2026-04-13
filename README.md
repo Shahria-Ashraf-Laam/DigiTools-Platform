@@ -1,16 +1,24 @@
-# React + Vite
+# 🚀 Digital Tools Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern digital tools product showcase platform where users can explore different SaaS tools, pricing plans, and key features in a clean and responsive UI. This project focuses on displaying product cards dynamically using JSON data.
 
-Currently, two official plugins are available:
+🔗 Live Demo: https://platform-digitools-a06.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 📝 Description
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Digital Tools Platform is a responsive React-based web application that showcases various digital tools with pricing, tags, and feature lists. It uses structured JSON data to dynamically render product cards, making the UI scalable and easy to maintain.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⚙️ Technologies Used
+
+* React JS
+* JavaScript (ES6)
+* Tailwind CSS
+* JSON Data
+* Vite
+* Responsive Design
+
+---
