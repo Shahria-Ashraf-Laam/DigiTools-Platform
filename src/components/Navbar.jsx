@@ -43,12 +43,12 @@ const Navbar = ({ cartCount }) => {
                         className='lg:hidden text-xl'
                         onClick={() => setMenuOpen(!menuOpen)}
                     >
-                        <i className={`fa-solid ${menuOpen ? 'fa-xmark' : 'fa-bars'}`}></i> 
+                        <i className={`fa-solid ${menuOpen ? 'fa-xmark' : 'fa-bars'}`}></i>
                     </button>
                 </div>
             </div>
 
-            {/* Mobile Menu - shown when menuOpen is true */}
+
             {menuOpen && (
                 <div className='lg:hidden w-10/12 mx-auto pt-4 pb-2 flex flex-col gap-4'>
                     <ul className='flex flex-col gap-3 list-none'>

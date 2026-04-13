@@ -9,6 +9,7 @@ import { ToastContainer } from 'react-toastify'
 import Models from './components/Models';
 import Steps from './components/Steps';
 import Pricing from './components/Pricing';
+import Ready from './components/Ready';
 
 
 const getModels = async () => {
@@ -43,6 +44,8 @@ function App() {
       <Steps></Steps>
 
       <Pricing></Pricing>
+
+      <Ready></Ready>
 
 
 
