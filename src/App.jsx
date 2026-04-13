@@ -8,6 +8,7 @@ import Cart from './components/Cart';
 import { ToastContainer } from 'react-toastify'
 import Models from './components/Models';
 import Steps from './components/Steps';
+import Pricing from './components/Pricing';
 
 
 const getModels = async () => {
@@ -38,6 +39,10 @@ function App() {
       {selectType === "cart" && (
         <Cart carts={carts} setCarts={setCarts} />
       )}
+
+      <Steps></Steps>
+
+      <Pricing></Pricing>
 
 
 
