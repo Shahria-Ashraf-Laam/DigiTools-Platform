@@ -22,3 +22,28 @@ Digital Tools Platform is a responsive React-based web application that showcase
 * Responsive Design
 
 ---
+
+## ✨ Features
+
+* 📦 Dynamic product cards from JSON data
+* 🎯 Tag system (Popular, New, Best Seller)
+* 📱 Fully responsive modern UI
+* 🚩 By clicking Cart, the cart section will be shown. By default it will show an   empty message.
+* 🚩 By Clicking Product, the Products section will be shown.
+* 🚩 By Default product section will be visible.
+* 🚩 On Click Remove Button product will remove from cart section
+* 🚩 Proceed to checkout button will remove all the products from the cart
+* 🚩In this section the total of the selected products ( added on the carts) will show here.
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/Shahria-Ashraf-Laam/DigiTools-Platform
+cd DigiTools-Platform
+npm install
+npm run dev
+```
+
+---
