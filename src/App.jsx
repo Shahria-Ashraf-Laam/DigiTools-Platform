@@ -10,6 +10,7 @@ import Models from './components/Models';
 import Steps from './components/Steps';
 import Pricing from './components/Pricing';
 import Ready from './components/Ready';
+import Footer from './components/Footer';
 
 
 const getModels = async () => {
@@ -47,6 +48,7 @@ function App() {
 
       <Ready></Ready>
 
+      <Footer></Footer>
 
 
       <ToastContainer></ToastContainer>
