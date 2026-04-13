@@ -1,12 +1,18 @@
 import { useState } from 'react'
 import './App.css'
+import Navbar from './components/Navbar';
+import Banner from './components/Banner';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [selectType, setSelectType] = useState("products")
+  const [carts, setCarts] = useState([])
 
   return (
     <>
-      <h2 className='text-red-500 bg-black py-8 text-center font-bold'>Hello</h2>
+
+    <Navbar carts={carts} setCarts={setCarts} cartCount={carts.length}></Navbar>
+
+    <Banner></Banner>
     </>
   )
 }
